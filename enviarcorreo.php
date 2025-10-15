@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars($_POST['message']);
 
     // Destinatario
-    $to = "hola@libelulacreations.com";
+    $to = "hello@libelulacreations.com";
 
     // Asunto del correo
     $subject = "Nuevo mensaje desde el formulario: $subject";
