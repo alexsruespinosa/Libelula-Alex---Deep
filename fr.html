@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libélula Creations | Agence de marketing numérique</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+    <meta name="description" content="Transformez votre marque avec Libélula Creations. Nous faisons décoller les marques grâce à une stratégie numérique innovante, un design percutant et un marketing créatif sur les réseaux sociaux." />
+    <meta name="author" content="Libélula Creations" />
+
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:title" content="Libélula Creations | Nous faisons décoller les marques" />
+    <meta property="og:description" content="Agence créative de marketing numérique spécialisée en stratégie de marque, design et réseaux sociaux. Faites décoller votre marque avec nous." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+  <!-- Tailwind & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Feather Icons & Anime.js -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            libelula: {
+              primary: '#6366f1',
+              secondary: '#a855f7',
+              accent: '#ec4899',
+              light: '#e0e7ff',
+              dark: '#4338ca'
+            }
+          },
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'sans-serif'],
+            display: ['"Bebas Neue"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- SEO Meta Tags (duplicate kept minimal) -->
+</head>
+
+<body>
+  
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-2xl font-bold text-main">Libélula Creations</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-8">
+            <a href="index.html" class="nav-link">EN</a>
+            <a href="#" class="nav-link">Accueil</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#portfolio" class="nav-link">Projets</a>
+            <a href="#contact" class="btn-primary">Contact</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button id="menu-toggle" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-libelula-primary focus:outline-none">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content Sections -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+            Esprits <span class="text-span">créatifs</span>, cœurs numériques
+          </h1>
+          <p class="text-xl text-gray-600">
+            Des solutions de marketing numérique qui transforment votre entreprise en une force irrésistible. Là où la créativité rencontre la stratégie.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#contact" class="btn-primary inline-flex items-center">
+              Lancez votre projet MAINTENANT !<i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+            <a href="#services" class="btn-outline inline-flex items-center">
+              Nos services
+            </a>
+          </div>
+        </div>
+        <div class="relative animate-float hidden lg:block">
+          <img src="img/dragonfly2.png" alt="Concept marketing"  />
+          <div class="absolute -z-10"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Sections -->
+
+        <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-h2 mb-4">Nos <span class="text-span">services</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Solutions numériques complètes conçues pour élever votre marque</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg service-card transition duration-300">
+                    <div class="w-16 h-16 icon-bg rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="compass" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Stratégie numérique</h3>
+                    <p class="text-gray-600 mb-6">
+                        Feuilles de route basées sur les données qui alignent vos objectifs d'affaires avec les besoins de votre audience pour un impact maximal.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Recherche de marché</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Cartographie du parcours client</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Analyse de performance</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-libelula-primary font-medium inline-flex items-center">En savoir plus <i data-feather="arrow-right" class="ml-1"></i></a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg service-card transition duration-300">
+                    <div class="w-16 h-16 icon-bg rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="pen-tool" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Branding & design</h3>
+                    <p class="text-gray-600 mb-6">
+                        Identités visuelles percutantes qui communiquent votre proposition de valeur unique et résonnent auprès de vos publics.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Logo & identité visuelle</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>UI/UX Design (Conception web)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Guides de marque</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-libelula-primary font-medium inline-flex items-center">En savoir plus <i data-feather="arrow-right" class="ml-1"></i></a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg service-card transition duration-300">
+                    <div class="w-16 h-16 icon-bg rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="share-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Marketing sur les réseaux sociaux</h3>
+                    <p class="text-gray-600 mb-6">
+                        Contenu stratégique qui engage les abonnés et les convertit en clients loyaux.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Création de contenu</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Gestion de communauté</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="check" class="mr-2 text-libelula-primary"></i>
+                            <span>Campagnes payantes</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-libelula-primary font-medium inline-flex items-center">En savoir plus <i data-feather="arrow-right" class="ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-h2 mb-4">Travaux <span class="text-span">récents</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Découvrez comment nous avons aidé des marques à déployer leurs ailes</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="relative group portfolio-item rounded-xl overflow-hidden">
+                    <img src="img/carbranding.jpg" alt="Campagne pour une marque retail" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-libelula-primary/90 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-xl font-bold mb-2">Portomatiza</h3>
+                        <p class="text-white/90 mb-4">Refonte 360° pour une entreprise de systèmes de sécurité</p>
+                        <a href="#" class="text-white font-medium inline-flex items-center">Voir le cas <i data-feather="arrow-right" class="ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="relative group portfolio-item rounded-xl overflow-hidden">
+                    <img src="img/spaweb.jpg" alt="Stratégie digitale pour un restaurant" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-libelula-primary/90 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-xl font-bold mb-2">Body & Face Spa</h3>
+                        <p class="text-white/90 mb-4">Conception web + automatisation avec IA</p>
+                        <a href="#" class="text-white font-medium inline-flex items-center">Voir le cas <i data-feather="arrow-right" class="ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="relative group portfolio-item rounded-xl overflow-hidden">
+                    <img src="http://static.photos/technology/640x360/3" alt="Branding pour une startup tech" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-libelula-primary/90 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300">
+                        <h3 class="text-white text-xl font-bold mb-2">Nebula AI</h3>
+                        <p class="text-white/90 mb-4">Identité de marque pour une plateforme d'intelligence artificielle</p>
+                        <a href="#" class="text-white font-medium inline-flex items-center">Voir le cas <i data-feather="arrow-right" class="ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-libelula-primary font-bold text-lg">
+                    Voir tous les projets <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8" id="services">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-h2 mb-4">Témoignages <span class="text-span">clients</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ce que nos partenaires disent de notre collaboration</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/1" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah K.</h4>
+                            <p class="text-sm text-gray-500">PDG, Urban Threads</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        « Libélula a transformé notre identité de marque et notre présence numérique. Leur approche stratégique a doublé nos ventes en ligne en seulement 6 mois. »
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/2" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mark T.</h4>
+                            <p class="text-sm text-gray-500">Fondateur, Bistro Verde</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        « Leur stratégie sur les réseaux sociaux a dynamisé notre présence en ligne. Nous sommes complet plusieurs semaines à l'avance grâce à eux. »
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/3" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Jasmine L.</h4>
+                            <p class="text-sm text-gray-500">CMO, Nebula AI</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        « De la stratégie de marque à l'exécution, Libélula a dépassé nos attentes à chaque étape. Notre levée de fonds a été sursouscrite grâce à leur positionnement. »
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                        <i data-feather="star" class="text-libelula-primary w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h2 class="text-h2">Entrons en <span class="text-span">contact</span></h2>
+                    <p class="text-xl text-gray-600">
+                        Que vous souhaitiez lancer, rebrander ou développer — nous serions ravis d'en savoir plus sur votre projet.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="p-3 icon-bg rounded-full  mr-4">
+                                <i data-feather="mail"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Écrivez-nous !</p>
+                                <a href="mailto:hola@libelulacreations.com" class="font-medium text-gray-900">hola@libelulacreations.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="p-3 icon-bg rounded-full  mr-4">
+                                <i data-feather="message-circle"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Notre Whatsapp :</p>
+                                <a href="https://wa.me/14383210984" class="font-medium text-gray-900">+1 438-321-0984</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="p-3 icon-bg rounded-full  mr-4">
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Trouvez-nous</p>
+                                <a href="tel:+18005551234" class="font-medium text-gray-900">Partout où vous avez besoin de nous</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#" class="p-3 bg-gray-100 rounded-full hover:bg-libelula-light hover:text-libelula-primary transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="p-3 bg-gray-100 rounded-full hover:bg-libelula-light hover:text-libelula-primary transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="p-3 bg-gray-100 rounded-full hover:bg-libelula-light hover:text-libelula-primary transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="p-3 bg-gray-100 rounded-full hover:bg-libelula-light hover:text-libelula-primary transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-inner">
+                    <form action="enviarcorreo.php" method="POST" class="space-y-6">
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nom</label>
+                          <input name="nombre" type="text" id="nombre" placeholder="Quel est votre nom ?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
+                        </div>
+                        <div>
+                          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Courriel</label>
+                          <input name="email" type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Sujet</label>
+                        <input name="subject" type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
+                      </div>
+
+                      <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required></textarea>
+                      </div>
+
+                      <button type="submit" class="w-full bg-libelula-primary text-white px-6 py-4 rounded-lg font-medium hover:bg-libelula-dark transition flex items-center justify-center ">
+                        Envoyer le message <i data-feather="send" class="ml-2 text-center"></i>
+                      </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-500 text-sm">
+    © 2025 Libélula Creations. Tous droits réservés.
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
