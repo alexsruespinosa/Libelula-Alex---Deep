@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Menú móvil (básico)
+ /* 
+ 
+ Menú móvil (básico)
 document.getElementById("menu-toggle")?.addEventListener("click", () => {
-  alert("Menú móvil (aquí puedes implementar la funcionalidad)");
-});
+  alert("We are working for you! (Coming Soon...)");
+}); */

@@ -125,3 +125,22 @@ span.text-main {
   100% { transform: translateY(0); }
  
 }
+
+#success-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+
+}
+

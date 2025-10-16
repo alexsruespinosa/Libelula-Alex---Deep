@@ -88,7 +88,7 @@
         </div>
         <div class="-mr-2 flex md:hidden">
           <button id="menu-toggle" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-libelula-primary focus:outline-none">
-            <i data-feather="menu"></i>
+            <a href="fr.html" class="nav-link">FR</a>
           </button>
         </div>
       </div>
@@ -100,6 +100,11 @@
     <!-- Hero Section -->
     <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative animate-float ">
+        <!--<div class="relative animate-float hidden lg:block">  bloquea la img en pantallas menores-->
+          <img src="img/dragonfly.png" alt="Dragonfly image"/>
+          <div class="absolute -z-10"></div>
+        </div>
         <div class="space-y-8">
           <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
             Creative <span class="text-span">Minds</span>, Digital Hearts
@@ -116,10 +121,7 @@
             </a>
           </div>
         </div>
-        <div class="relative animate-float hidden lg:block">
-          <img src="img/dragonfly2.png" alt="Dragonfly image" d />
-          <div class="absolute -z-10"></div>
-        </div>
+        
       </div>
     </section>
 
@@ -356,7 +358,7 @@
                             </div>
                             <div>
                                 <p class="text-gray-500">Say hello!</p>
-                                <a href="mailto:hello@libelula.com" class="font-medium text-gray-900">hello@libelula.com</a>
+                                <a href="mailto:hello@libelula.com" class="font-medium text-gray-900">hello@libelulacreations.com</a>
                             </div>
                         </div>
                         <div class="flex items-center">
@@ -393,32 +395,38 @@
                         </a>
                     </div>
                 </div>
+
+                <!--Contat Form Start-->
+
                 <div class="bg-gray-50 p-8 rounded-2xl shadow-inner">
-                    <form action="enviarcorreo.php" method="POST" class="space-y-6">
+                    <form action="mail.php" method="POST" class="space-y-6">
                       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                           <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                          <input name="nombre" type="text" id="nombre" placeholder="¿Cuál es tu nombre?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
+                          <input name="nombre" type="text" id="nombre" placeholder="Name of the Star!" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
                         </div>
                         <div>
                           <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                          <input name="email" type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
+                          <input name="email" type="email" id="email" placeholder="e-mail" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
                         </div>
                       </div>
 
                       <div>
-                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                        <input name="subject" type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Whatsapp / Phone numer</label>
+                        <input name="subject" type="tel" id="subject" placeholder="How can we help?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required>
                       </div>
 
                       <div>
                         <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                        <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required></textarea>
+                        <textarea name="message" id="message" placeholder="We want to here it all! Leave your message..." rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-libelula-primary focus:border-libelula-primary" required></textarea>
                       </div>
 
                       <button type="submit" class="w-full bg-libelula-primary text-white px-6 py-4 rounded-lg font-medium hover:bg-libelula-dark transition flex items-center justify-center ">
                         Send Message <i data-feather="send" class="ml-2 text-center"></i>
                       </button>
+
+                      <input type="hidden" name="_next" value="index.html">
+                      <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>
@@ -435,5 +443,7 @@
 
   <!-- JS -->
   <script src="js/main.js"></script>
+
+
 </body>
 </html>

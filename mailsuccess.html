@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libélula Creations | Digital Marketing Agency</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+    <meta name="description" content="Transform your brand with Libélula Creations. We make brands fly through innovative digital strategy, stunning design, and strategic social media marketing." />
+    <meta name="author" content="Libélula Creations" />
+
+    <meta property="og:title" content="Libélula Creations | We Make Brands Fly" />
+    <meta property="og:description" content="Creative digital marketing agency specializing in brand strategy, design, and social media. Let us make your brand fly." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+  <!-- Tailwind & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Feather Icons & Anime.js -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            libelula: {
+              primary: '#6366f1',
+              secondary: '#a855f7',
+              accent: '#ec4899',
+              light: '#e0e7ff',
+              dark: '#4338ca'
+            }
+          },
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'sans-serif'],
+            display: ['"Bebas Neue"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  
+  <!-- SEO Meta Tags -->
+    <title>Libélula Creations |  Digital Marketing Agency</title>
+    <meta name="description" content="Transform your brand with Libélula Creations. We make brands fly through innovative digital strategy, stunning design, and strategic social media marketing." />
+    <meta name="author" content="Libélula Creations" />
+
+    <meta property="og:title" content="Libélula Creations | We Make Brands Fly" />
+    <meta property="og:description" content="Creative digital marketing agency specializing in brand strategy, design, and social media. Let us make your brand fly." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+</head>
+
+<body>
+    
+  
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-2xl font-bold text-main">Libélula Creations</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-8">
+            <a href="fr.html" class="nav-link">FR</a>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#portfolio" class="nav-link">Work</a>
+            <a href="#contact" class="btn-primary">Contact</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button id="menu-toggle" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-libelula-primary focus:outline-none">
+            <a href="fr.html" class="nav-link">FR</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content Sections -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative animate-float ">
+        <!--<div class="relative animate-float hidden lg:block">  bloquea la img en pantallas menores-->
+          <img src="img/dragonfly.png" alt="Dragonfly image" d />
+          <div class="absolute -z-10"></div>
+        </div>
+        <div class="space-y-8">
+          <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+            Thanks for <span class="text-span">contacting</span> Us!
+          </h1>
+          <p class="text-xl text-gray-600">
+            You will be hearing from us soon...
+          </p>
+          <p class="text-x text-gray-600">
+            If you are not redirected automatically, please click the button below to return to the homepage.
+          </p>
+          <div class="flex space-x-4">
+            <a href="index.html" class="btn-primary inline-flex items-center">
+              Clic Here to Return! <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- redirection -->
+     <script>
+        setTimeout(function(){
+        window.location.href = 'index.html';
+        }, 6000);
+    </script>
+
+
+
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-500 text-sm">
+    © 2025 Libélula Creations. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
